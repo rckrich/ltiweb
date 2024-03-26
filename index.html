@@ -107,8 +107,8 @@
 						<nav class="primary-menu">
 
 							<ul class="menu-container border-end-0">
-								<li class="menu-item"><a class="menu-link" href="#inicio" data-scrollto="#inicio"><div>Inicio</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#nosotros" data-scrollto="#nosotros"><div>Nosotros</div></a>
+								<li class="menu-item"><a class="menu-link" href="#inicio" data-scrollto="#inicio"><div style="font-weight: 400; font-size: medium;">Inicio</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#nosotros" data-scrollto="#nosotros"><div style="font-weight: 400; font-size: medium;">Nosotros</div></a>
 									<!--
 									<ul class="sub-menu-container" data-class="up-lg:not-dark">
 										<li class="current menu-item"><a class="menu-link" href="index.html"><div>Home</div></a></li>
@@ -120,10 +120,10 @@
 									</ul>
 									-->
 								</li>
-								<li class="menu-item"><a class="menu-link" href="#portafolio" data-scrollto="#portafolio"><div>Portafolio</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#clientes" data-scrollto="#clientes"><div>Clientes</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#ubicacion" data-scrollto="#ubicacion"><div>Ubicación</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#contacto" data-scrollto="#contacto"><div>Contacto</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#portafolio" data-scrollto="#portafolio"><div style="font-weight: 400; font-size: medium;">Portafolio</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#clientes" data-scrollto="#clientes"><div style="font-weight: 400; font-size: medium;">Clientes</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#ubicacion" data-scrollto="#ubicacion"><div style="font-weight: 400; font-size: medium;">Ubicación</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#contacto" data-scrollto="#contacto"><div style="font-weight: 400; font-size: medium;">Contacto</div></a></li>
 							</ul>
 
 						</nav>
@@ -212,8 +212,16 @@
 									<p class="d-sm-block fontSizePageTitleSub" style="filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));" data-animate="fadeInUp" data-delay="200"><b>"Desde el cálculo lumínico hasta la gestión de obra, precisión en cada paso de tu proyecto eléctrico"</b></p>
 								</div>
 							</div>
+							<!--
 							<div class="swiper-slide-bg" style="background-image: url('images/images-lti/carusel/carusel-5.webp');"></div>
 							<div class="video-overlay" style="background-color: rgba(0,0,0,0.20);"></div>
+							-->
+							<div class="video-wrap no-placeholder">
+								<video id="slide-video" poster="videos/Header/DJI_0372_preview.jpg" preload="auto" loop autoplay muted playsinline>
+									<source src='videos/Header/DJI_0372.mov'>
+								</video>
+								<div class="video-overlay" style="background-color: rgba(0,0,0,0.20);"></div>
+							</div>
 						</div>
 
 						<div class="swiper-slide dark">
@@ -257,9 +265,9 @@
 								<br>
 								<br>
 								<span style="font-weight: 700; color: rgb(60, 60, 60)">
-									<span style="color: #ff9100;">•</span> Departamentos <span style="color: #ff9100;">•</span> Parques <span style="color: #ff9100;">•</span> Iglesias <span style="color: #ff9100;">•</span> Edificios Culturales <span style="color: #ff9100;">•</span> Zonas Arqueológicas <span style="color: #ff9100;">•</span> Puentes
-									
-									<span style="color: #ff9100;">•</span> Edificios de Oficinas <span style="color: #ff9100;">•</span> Aeropuertos <span style="color: #ff9100;">•</span> Carreteras <span style="color: #ff9100;">•</span> Hospitales <span style="color: #ff9100;">•</span> Naves Industriales
+									<span style="color: #ff9100;">•</span> Departamentos <span style="color: #ff9100;">•</span> Parques <span style="color: #ff9100;">•</span> Iglesias <span style="color: #ff9100;">•</span> Edificios Culturales <span style="color: #ff9100;">•</span> Zonas Arqueológicas <span style="color: #ff9100;">•</span> Puentes <span style="color: #ff9100;">•</span> Edificios de Oficinas 
+									<br>
+									<span style="color: #ff9100;">•</span> Aeropuertos <span style="color: #ff9100;">•</span> Carreteras <span style="color: #ff9100;">•</span> Hospitales <span style="color: #ff9100;">•</span> Naves Industriales
 								</span> 
 								<br>
 								<br>
@@ -388,7 +396,7 @@
 			============================================= -->
 			<div id="portfolio" class="portfolio row grid-container g-0" data-layout="fitRows">
 				<!--Catedarl de San Idelfonso-->
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-torneo">
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-6 pf-torneo">
 					<div class="grid-inner">
 						<div class="portfolio-image">
 							<a href="#myModalCatedralDeMerida" data-lightbox="inline">
@@ -414,7 +422,7 @@
 						</div>-->
 					</div>
 					<div class="modal1 mfp-hide" id="myModalCatedralDeMerida">
-						<div class="block mx-auto" style="max-width: 90svw;">							
+						<div class="block mx-auto portfolioModalSize">	<!--style="max-width: 90svw;"-->				
 				
 							<div class="section row" style="background-color: #000000; padding: 0px !important; border-radius: 15px;"> <!--show-grid-->
 								<!--Galeria-->
@@ -471,7 +479,7 @@
 									</div>
 								</div>
 								-->
-								<!--enda Galeria Alternativa-->
+								<!--end Galeria Alternativa-->
 								<div class="col-sm-4 dark">
 									<div style="padding-top: 30px;">
 										<h2 style="font-size: larger;">Catedral de San Idelfonso<br><span style="font-size: small;">Mérida, Yucatán</span></h2>											
@@ -503,7 +511,7 @@
 				</article>
 
 				<!--Grutas de Loltun-->
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-torneo">
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-6 pf-torneo">
 					<div class="grid-inner">
 						<div class="portfolio-image">
 							<a href="#myModalGrutasLoltun" data-lightbox="inline">
@@ -524,7 +532,7 @@
 						</div>
 					</div>
 					<div class="modal1 mfp-hide" id="myModalGrutasLoltun">
-						<div class="block mx-auto" style="max-width: 90svw;">							
+						<div class="block mx-auto portfolioModalSize">	<!--style="max-width: 90svw;"-->				
 				
 							<div class="section row" style="background-color: #000000; padding: 0px !important; border-radius: 15px;">
 								<!--Galeria-->
@@ -572,7 +580,7 @@
 				</article>
 
 				<!--Estadio Kukulcan Alamo-->
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-torneo">
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-6 pf-torneo">
 					<div class="grid-inner">
 						<div class="portfolio-image">
 							<a href="#myModalEstadioKukulcan" data-lightbox="inline">
@@ -593,7 +601,7 @@
 						</div>
 					</div>
 					<div class="modal1 mfp-hide" id="myModalEstadioKukulcan">
-						<div class="block mx-auto" style="max-width: 90svw;">							
+						<div class="block mx-auto portfolioModalSize">	<!--style="max-width: 90svw;"-->				
 				
 							<div class="section row" style="background-color: #000000; padding: 0px !important; border-radius: 15px;">
 								<!--Galeria-->
@@ -635,7 +643,7 @@
 				</article>
 
 				<!--El Minaret-->
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-torneo">
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-6 pf-torneo">
 					<div class="grid-inner">
 						<div class="portfolio-image">
 							<a href="#myModalMiranet" data-lightbox="inline">
@@ -656,7 +664,7 @@
 						</div>
 					</div>
 					<div class="modal1 mfp-hide" id="myModalMiranet">
-						<div class="block mx-auto" style="max-width: 90svw;">							
+						<div class="block mx-auto portfolioModalSize">	<!--style="max-width: 90svw;"-->				
 				
 							<div class="section row" style="background-color: #000000; padding: 0px !important; border-radius: 15px;">
 								<!--Galeria-->
@@ -697,7 +705,7 @@
 				</article>
 
 				<!--Parque la Plancha-->
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-torneo">
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-6 pf-torneo">
 					<div class="grid-inner">
 						<div class="portfolio-image">
 							<a href="#myModalParqueLaPlancha" data-lightbox="inline">
@@ -718,7 +726,7 @@
 						</div>
 					</div>
 					<div class="modal1 mfp-hide" id="myModalParqueLaPlancha">
-						<div class="block mx-auto" style="max-width: 90svw;">							
+						<div class="block mx-auto portfolioModalSize">	<!--style="max-width: 90svw;"-->				
 				
 							<div class="section row" style="background-color: #000000; padding: 0px !important; border-radius: 15px;">
 								<!--Galeria-->
@@ -761,7 +769,7 @@
 				</article>
 
 				<!--Paso de Henequenes-->
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-torneo">
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-6 pf-torneo">
 					<div class="grid-inner">
 						<div class="portfolio-image">
 							<a href="#myModalPasoDeHenequenes" data-lightbox="inline">
@@ -782,7 +790,7 @@
 						</div>
 					</div>
 					<div class="modal1 mfp-hide" id="myModalPasoDeHenequenes">
-						<div class="block mx-auto" style="max-width: 90svw;">							
+						<div class="block mx-auto portfolioModalSize">	<!--style="max-width: 90svw;"-->				
 				
 							<div class="section row" style="background-color: #000000; padding: 0px !important; border-radius: 15px;">
 								<!--Galeria-->
@@ -826,7 +834,7 @@
 				</article>
 
 				<!--Puente Yucalpeten-->
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-torneo">
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-6 pf-torneo">
 					<div class="grid-inner">
 						<div class="portfolio-image">
 							<a href="#myModalPuenteYucalpeten" data-lightbox="inline">
@@ -847,7 +855,7 @@
 						</div>
 					</div>
 					<div class="modal1 mfp-hide" id="myModalPuenteYucalpeten">
-						<div class="block mx-auto" style="max-width: 90svw;">							
+						<div class="block mx-auto portfolioModalSize">	<!--style="max-width: 90svw;"-->				
 				
 							<div class="section row" style="background-color: #000000; padding: 0px !important; border-radius: 15px;">
 								<!--Galeria-->
@@ -891,7 +899,7 @@
 				</article>
 
 				<!--Teotihuacan-->
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-torneo">
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-6 pf-torneo">
 					<div class="grid-inner">
 						<div class="portfolio-image">
 							<a href="#myModalTeotihuacan" data-lightbox="inline">
@@ -912,7 +920,7 @@
 						</div>
 					</div>
 					<div class="modal1 mfp-hide" id="myModalTeotihuacan">
-						<div class="block mx-auto" style="max-width: 90svw;">							
+						<div class="block mx-auto portfolioModalSize">	<!--style="max-width: 90svw;"-->				
 				
 							<div class="section row" style="background-color: #000000; padding: 0px !important; border-radius: 15px;">
 								<!--Galeria-->
@@ -956,7 +964,7 @@
 				</article>
 
 				<!--Centro Historico de Valladolid-->
-				<article class="portfolio-item col-md-4 col-sm-6 col-12 pf-torneo">
+				<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-6 pf-torneo">
 					<div class="grid-inner">
 						<div class="portfolio-image">
 							<a href="#myModalCentroValladolid" data-lightbox="inline">
@@ -977,7 +985,7 @@
 						</div>
 					</div>
 					<div class="modal1 mfp-hide" id="myModalCentroValladolid">
-						<div class="block mx-auto" style="max-width: 90svw;">							
+						<div class="block mx-auto portfolioModalSize">	<!--style="max-width: 90svw;"-->				
 				
 							<div class="section row" style="background-color: #000000; padding: 0px !important; border-radius: 15px;">
 								<!--Galeria-->
@@ -1067,22 +1075,24 @@
 				
 				<div class="row mx-0 bottommargin-lg align-items-stretch">
 					<div class="col-lg-8 d-md-block px-0">
-						<div class="fluid-width-video-wrapper" style="padding-top: 75%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.329676859425!2d-89.61392416169667!3d21.008372122890265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5676af7557afc5%3A0xf10c9f5aa6d5ab79!2sPolygon%20Studio!5e0!3m2!1ses-419!2smx!4v1658293406929!5m2!1ses-419!2smx" style="border:0; filter: grayscale(100%) invert(100%) contrast(83%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="fitvid0"></iframe></div>
+						<div class="fluid-width-video-wrapper" style="padding-top: 75%;">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3724.5279074235723!2d-89.63670692474388!3d21.011552980633528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDAwJzQxLjYiTiA4OcKwMzgnMDIuOSJX!5e0!3m2!1ses!2smx!4v1711416685987!5m2!1ses!2smx" style="border:0; filter: grayscale(100%) invert(100%) contrast(83%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
 					</div>
 
 					<div class="col-lg-4" style="background-color: #161616;" id="address">
 						<div class="col-padding">
 							<h5>Dirección</h5>
 							<p style="font-size: small; color: #bebebe;">
-								Calle 37 352, Emiliano<br>
-								Zapata Norte. 97129<br>
+								Calle 22, #100A<br>
+								Chuburna de Hidalgo. 97205<br>
 								Mérida, Yucatán, México.<br>
 							</p>
 							<br>
 							<h5>Contacto</h5>
 							<div style="font-size: small; line-height: 0.5;">
 								<p style="color: #bebebe;">
-									contacto@xyz.com
+									direccion@lti.com.mx
 								</p>
 								<a href="https://api.whatsapp.com/send?phone=529992678093" class="m-0"><img style="max-height: 20px;" src="images/images-lti/iconos/icon-whatsapp.png">&nbsp&nbsp +52 999 267 8093</a>
 
@@ -1096,12 +1106,10 @@
 
 
 			<!-- START FORM -->
-			<!--
 			<div id="contacto"></div>		
 			<iframe class="m-0" id="registro" title="Contact Form" width="300" height="800"
 				src="forms/FormConFondo.html">
 			</iframe>				
-			-->
 			<!-- END FORM -->
 
 	
@@ -1111,83 +1119,28 @@
 		============================================= -->
 		<footer id="footer" class="border-0 dark" style="background-color:rgb(0, 0, 0); background-size: cover;">
 
-			<div class="container">
-
-				<!-- Footer Widgets
-				============================================= -->
-				<!--
-				<div class="footer-widgets-wrap">
-
-					<div class="row widget">
-
-						<div class="text-start col-sm-4">
-							<h4 style="font-size: 22px;">Book your Free Trial</h4>
-							<form action="#" class="row mb-1" style="max-width: 300px;">
-								<div class="col-12 form-group">
-									<label for="template-footer-form-email" class="text-capitalize fw-semibold">Username or Email</label>
-									<input type="email" id="template-footer-form-email" name="template-footer-form-email" value="" class="form-control not-dark">
-								</div>
-								<div class="col-12 form-group">
-									<label for="template-footer-form-password" class="text-capitalize fw-semibold">Choose Password</label>
-									<input type="password" id="template-footer-form-password" name="template-footer-form-password" value="" class="form-control not-dark">
-								</div>
-								<div class="col-12 form-group mb-0">
-									<button type="submit" class="fw-normal text-capitalize button button-border button-dark button-circle m-0" value="submit">Register Now</button>
-								</div>
-							</form>
-							<p class="mb-0"><small class="fw-light"><em>* We keep your information private</em></small></p>
-						</div>
-
-						<div class="text-start col-sm-4">
-							<h4 style="font-size: 22px;">Location:</h4>
-							<address>
-								795 Folsom Ave, Suite 600<br>
-								San Francisco, CA 94107<br>
-							</address>
-							<abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>
-							<abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>
-							<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com<br>
-
-							<div class="d-flex mt-4">
-								<a href="#" class="social-icon si-small rounded-circle text-white bg-facebook mb-0">
-									<i class="fa-brands fa-facebook-f"></i>
-									<i class="fa-brands fa-facebook-f"></i>
-								</a>
-								<a href="#" class="social-icon si-small rounded-circle text-white bg-x-twitter mb-0">
-									<i class="fa-brands fa-x-twitter"></i>
-									<i class="fa-brands fa-x-twitter"></i>
-								</a>
-								<a href="#" class="social-icon si-small rounded-circle text-white bg-instagram mb-0">
-									<i class="fa-brands fa-instagram"></i>
-									<i class="fa-brands fa-instagram"></i>
-								</a>
-								<a href="#" class="social-icon si-small rounded-circle text-white bg-github mb-0">
-									<i class="fa-brands fa-github2"></i>
-									<i class="fa-brands fa-github2"></i>
-								</a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-				-->
-			</div>
-
 			<!-- Copyrights
 			============================================= -->
 			<div id="copyrights" class="text-center">
 
 				<div class="container">
 
-					<div>
+					<div class="center text-center">
 						<img style="height: 60px; border-radius: 50px;" src="images/images-lti/brand/logotipo-lti.png">
+						<br>
+						<br>
+						<a href="https://www.facebook.com/ltigroupmx/"><img style="height: 30px; margin: 10px;" src="images/images-lti/iconos/icon-Facebook.png"></a>
+						<a href="https://www.instagram.com/ltilighting/"><img style="height: 30px; margin: 10px" src="images/images-lti/iconos/icon-Instagram.png"></a>
+						<br>
 						<br>
 						Copyrights &copy; 2024 <br>All Rights Reserved by LT&I<br>
 						<!--<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>-->
 						<br>
 						<br>
+						<br>
+						<br>
+						
 					</div>
-
 				</div>
 
 			</div><!-- #copyrights end -->

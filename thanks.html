@@ -19,25 +19,24 @@
     
     <div class="flex items-center min-h-screen" style="background-color:#000000;">
 
-        <!--
-        <video autoplay muted loop style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%;">
-            <source src="Golf_Intro_Ball.mov">
-        </video>
-        -->
         <div class="container mx-auto center"> <!-- style="position: fixed; padding-left: 180px; padding-bottom: 200px;"> -->
             <video style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%;" playsinline loop muted autoplay>
-                <source src="videos/videos-DinoSauri/Golf_Hoyo.mov">
+                <source src="videos/Header/DJI_0372.mov">
             </video>
 
             <div class="text-center" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 92%;">
-                <img src="images/images-DinoSauri/DinoSauri_Colors.GIF" style="border-radius: 100px; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 100px; height: 100px;">       
+                <img src="images/images-lti/brand/imagotipo-lti.png" style="border-radius: 100px; display: block; margin-left: auto; margin-right: auto; width: 50%; width: 100px; height: 100px;">       
 
-                <h1 class="my-3 text-3xl font-semibold" style="color: rgb(255, 255, 255); filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));"">          
-                    <!--Contact Us-->
+                <h1 class="my-3 text-3xl font-semibold" style="color: rgb(255, 255, 255); filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));">          
                     Recibimos tu Mensaje        
-                </h1>       
-
-                <p style="color: white; padding-top: 350px; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));">       
+                </h1>
+                <br>
+                <h1 class="my-3 text-4xl font-semibold" style="color: rgb(255, 255, 255); filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));">          
+                    <!--Contact Us-->
+                    ¡Gracias por contactárnos!       
+                </h1>  
+                <br>
+                <p class="text-2xl" style="color: white; padding-top: 0px; filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));">       
                     <!--Fill up the form below to send us a message.-->
                     Pronto nos pondremos en contacto contigo.
                 </p>
@@ -46,89 +45,6 @@
         </div>
 
     </div>
-
-
-  <script>
-        (function () {
-            "use strict";
-    /*
-    * Form Validation
-    */
-
-    // Fetch all the forms we want to apply custom validation styles to
-    const forms = document.querySelectorAll(".needs-validation");
-    const result = document.getElementById("result");
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms).forEach(function (form) {
-        form.addEventListener(
-        "submit",
-        function (event) {
-            if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
-
-            form.querySelectorAll(":invalid")[0].focus();
-            } else {
-            /*
-            * Form Submission using fetch()
-            */
-
-            const formData = new FormData(form);
-            event.preventDefault();
-            event.stopPropagation();
-            const object = {};
-            formData.forEach((value, key) => {
-                object[key] = value;
-            });
-            const json = JSON.stringify(object);
-            result.innerHTML = "Porfavor esepere...";
-
-            fetch("https://api.web3forms.com/submit", {
-                method: "POST",
-                headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-                },
-                body: json
-            })
-                .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    //result.innerHTML = json.message;
-                    result.innerHTML = "Registro Recibido. Pasa al Proshop de Provincia para pagar y completar tu inscripción.";
-                    result.classList.remove("text-gray-500");
-                    result.classList.add("text-green-500");
-                } else {
-                    console.log(response);
-                    result.innerHTML = json.message;
-                    result.classList.remove("text-gray-500");
-                    result.classList.add("text-red-500");
-                }
-                })
-                .catch((error) => {
-                console.log(error);
-                result.innerHTML = "Algo salió mal, intentalo de nuevo.";
-                })
-                .then(function () {
-                form.reset();
-                form.classList.remove("was-validated");
-                setTimeout(() => {
-                    result.style.display = "none";
-                }, 5000);
-                });
-            }
-            form.classList.add("was-validated");
-        },
-        false
-        );
-    });
-    })();
-
-
-
-
-  </script>
-
 
 
 </body>

@@ -38,11 +38,15 @@
 
 @media screen and (min-width: 1301px) {
   .fontSizePageTitle{
-    font-size: 6svw !important;
+    font-size: 4svw !important;
   }
 
   .fontSizePageTitleSub{
     font-size: medium !important;
+  }
+
+  .portfolioModalSize{
+    max-width: 70svw;
   }
 
   .rckHeigthWidth-1{
@@ -58,11 +62,15 @@
 
 @media screen and (max-width: 1300px) {
   .fontSizePageTitle{
-    font-size: 6svw !important;
+    font-size: 4svw !important;
   }
 
   .fontSizePageTitleSub{
     font-size: medium !important;
+  }
+
+  .portfolioModalSize{
+    max-width: 70svw;
   }
 
   .rckHeigthWidth-1{
@@ -79,11 +87,15 @@
 
 @media screen and (max-width: 1100px) {
   .fontSizePageTitle{
-    font-size: 8svw !important;
+    font-size: 4svw !important;
   }
 
   .fontSizePageTitleSub{
     font-size: medium !important;
+  }
+
+  .portfolioModalSize{
+    max-width: 70svw;
   }
 
 }
@@ -91,11 +103,15 @@
 
 @media screen and (min-width: 1001px) {
   .fontSizePageTitle{
-    font-size: 6svw !important;
+    font-size: 5svw !important;
   }
 
   .fontSizePageTitleSub{
     font-size: medium !important;
+  }
+
+  .portfolioModalSize{
+    max-width: 70svw;
   }
     
   .rckFontSize {
@@ -121,6 +137,10 @@
     font-size: medium !important;
   }
 
+  .portfolioModalSize{
+    max-width: 90svw;
+  }
+
   .rckFontSize {
     font-size: 22px !important;
   }
@@ -143,6 +163,10 @@
 
   .fontSizePageTitleSub{
     font-size: small !important;
+  }
+
+  .portfolioModalSize{
+    max-width: 90svw;
   }
 
   .menuLogoSizeOnMobile{
